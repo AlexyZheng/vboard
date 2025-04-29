@@ -4,7 +4,6 @@ import time
 import os
 import configparser
 
-os.environ['GDK_BACKEND'] = 'x11'
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
