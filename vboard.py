@@ -4,6 +4,7 @@ import time
 import os
 import configparser
 
+os.environ['GDK_BACKEND'] = 'wayland'
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
