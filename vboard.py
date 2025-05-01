@@ -13,13 +13,13 @@ from gi.repository import GLib
 
 key_mapping = {uinput.KEY_ESC: "Esc", uinput.KEY_1: "1", uinput.KEY_2: "2", uinput.KEY_3: "3", uinput.KEY_4: "4", uinput.KEY_5: "5", uinput.KEY_6: "6",
     uinput.KEY_7: "7", uinput.KEY_8: "8", uinput.KEY_9: "9", uinput.KEY_0: "0", uinput.KEY_MINUS: "-", uinput.KEY_EQUAL: "=",
-    uinput.KEY_BACKSPACE: "Backspace", uinput.KEY_TAB: "Tab", uinput.KEY_Q: "Q Й", uinput.KEY_W: "W Ц", uinput.KEY_E: "E У", uinput.KEY_R: "R К",
-    uinput.KEY_T: "T Е", uinput.KEY_Y: "Y Н", uinput.KEY_U: "U Г", uinput.KEY_I: "I Ш", uinput.KEY_O: "O Щ", uinput.KEY_P: "P З",
-    uinput.KEY_LEFTBRACE: "[ Х", uinput.KEY_RIGHTBRACE: "] Ъ", uinput.KEY_ENTER: "Enter", uinput.KEY_LEFTCTRL: "Ctrl_L", uinput.KEY_A: "A Ф",
-    uinput.KEY_S: "S Ы", uinput.KEY_D: "D В", uinput.KEY_F: "F А", uinput.KEY_G: "G П", uinput.KEY_H: "H Р", uinput.KEY_J: "J О", uinput.KEY_K: "K Л",
-    uinput.KEY_L: "L Д", uinput.KEY_SEMICOLON: "; Ж", uinput.KEY_APOSTROPHE: "' Э", uinput.KEY_GRAVE: "` Ё", uinput.KEY_LEFTSHIFT: "Shift_L",
-    uinput.KEY_BACKSLASH: "\\", uinput.KEY_Z: "Z Я", uinput.KEY_X: "X Ч", uinput.KEY_C: "C С", uinput.KEY_V: "V М", uinput.KEY_B: "B И",
-    uinput.KEY_N: "N Т", uinput.KEY_M: "M Ь", uinput.KEY_COMMA: ", Б", uinput.KEY_DOT: ". Ю", uinput.KEY_SLASH: "/ .", uinput.KEY_RIGHTSHIFT: "Shift_R",
+    uinput.KEY_BACKSPACE: "Backspace", uinput.KEY_TAB: "Tab", uinput.KEY_Q: "Q Й", uinput.KEY_W: "W", uinput.KEY_E: "E", uinput.KEY_R: "R",
+    uinput.KEY_T: "T", uinput.KEY_Y: "Y", uinput.KEY_U: "U", uinput.KEY_I: "I", uinput.KEY_O: "O", uinput.KEY_P: "P",
+    uinput.KEY_LEFTBRACE: "[", uinput.KEY_RIGHTBRACE: "]", uinput.KEY_ENTER: "Enter", uinput.KEY_LEFTCTRL: "Ctrl_L", uinput.KEY_A: "A",
+    uinput.KEY_S: "S", uinput.KEY_D: "D", uinput.KEY_F: "F", uinput.KEY_G: "G", uinput.KEY_H: "H", uinput.KEY_J: "J", uinput.KEY_K: "K",
+    uinput.KEY_L: "L", uinput.KEY_SEMICOLON: ";", uinput.KEY_APOSTROPHE: "'", uinput.KEY_GRAVE: "`", uinput.KEY_LEFTSHIFT: "Shift_L",
+    uinput.KEY_BACKSLASH: "\\", uinput.KEY_Z: "Z", uinput.KEY_X: "X", uinput.KEY_C: "C", uinput.KEY_V: "V", uinput.KEY_B: "B",
+    uinput.KEY_N: "N", uinput.KEY_M: "M", uinput.KEY_COMMA: ",", uinput.KEY_DOT: ".", uinput.KEY_SLASH: "/", uinput.KEY_RIGHTSHIFT: "Shift_R",
     uinput.KEY_KPENTER: "Enter", uinput.KEY_LEFTALT: "Alt_L", uinput.KEY_RIGHTALT: "Alt_R", uinput.KEY_SPACE: "Space", uinput.KEY_CAPSLOCK: "CapsLock",
     uinput.KEY_F1: "F1", uinput.KEY_F2: "F2", uinput.KEY_F3: "F3", uinput.KEY_F4: "F4", uinput.KEY_F5: "F5", uinput.KEY_F6: "F6",
     uinput.KEY_F7: "F7", uinput.KEY_F8: "F8", uinput.KEY_F9: "F9", uinput.KEY_F10: "F10", uinput.KEY_F11: "F11", uinput.KEY_F12: "F12",
@@ -112,7 +112,7 @@ class VirtualKeyboard(Gtk.Window):
         # Define rows for keys
         rows = [
             ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Backspace" ],
-            ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\"],
+            ["Tab", "Q Й", "W Ц", "E У", "R К", "T Е", "Y Н", "U Г", "I Ш", "O Щ", "P З", "[", "]", "\\"],
             ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter"],
             ["Shift_L", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Shift_R", "↑"],
             ["Ctrl_L","Super_L", "Alt_L", "Space", "Alt_R", "Super_R", "Ctrl_R", "←", "→", "↓"]
