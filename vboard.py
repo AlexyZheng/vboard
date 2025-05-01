@@ -112,7 +112,7 @@ class VirtualKeyboard(Gtk.Window):
         # Define rows for keys
         rows = [
             ["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "Backspace" ],
-            ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\"],
+            ["Tab", "Q Й", "W Ц", "E У", "R К", "T Е", "Y Н", "U Г", "I Ш", "O Щ", "P З", "[", "]", "\\"],
             ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", "Enter"],
             ["Shift_L", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", "Shift_R", "↑"],
             ["Ctrl_L","Super_L", "Alt_L", "Space", "Alt_R", "Super_R", "Ctrl_R", "←", "→", "↓"]
