@@ -3,7 +3,6 @@ import uinput
 import time
 import os
 import configparser
-# Removed import sys
 
 os.environ['GDK_BACKEND'] = 'wayland'
 
@@ -336,7 +335,7 @@ class VirtualKeyboard(Gtk.Window):
             "Ctrl_L": 5, "Ctrl_R": 5, "Alt_L": 5, "Alt_R": 5, "Super_L": 5, "Super_R": 5, # 1.25x standard
             "Space": 20, # Adjusted to fit row 5
             "↑": 5, "↓": 5, "←": 5, "→": 5, # Arrows span 5 (1.25x standard to align better)
-            "\\": 5, # Slightly increased \ span to help fill space (adjusted back to 5)
+            "\\": 6, # Slightly increased \ span to help fill space
         }
         # Default span for standard keys (letters, numbers, symbols)
         default_span = 4
@@ -503,7 +502,6 @@ class VirtualKeyboard(Gtk.Window):
 
 
 if __name__ == "__main__":
-    # --- Start of existing application logic (without lock) ---
     win = VirtualKeyboard()
     win.connect("destroy", Gtk.main_quit)
     win.connect("destroy", lambda w: win.save_settings())
@@ -511,4 +509,3 @@ if __name__ == "__main__":
     win.connect("configure-event", win.on_resize)
     win.change_visibility()
     Gtk.main()
-    # --- End of existing application logic (without lock) ---
